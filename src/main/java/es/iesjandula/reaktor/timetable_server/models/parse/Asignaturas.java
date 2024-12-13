@@ -1,0 +1,28 @@
+package es.iesjandula.reaktor.timetable_server.models.parse;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+/**
+ * @author David Martinez
+ *
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Asignaturas
+{
+	private Long id_asignaturas;
+	
+	/** Attribute asignatura*/
+	private List<Asignatura> asignatura;
+	
+	/** Attribute totAs*/
+	private String totAs;
+
+}
